@@ -118,6 +118,13 @@ a {
     font-weight: normal;
 }
 
+.nav-box-foot {
+    width: 478px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .icon-foot {
     display: flex;
     gap: 10px;
@@ -133,5 +140,37 @@ a {
             width: 50px;
             height: 50px;
         }
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav-box {
+        display: none;
+    }
+
+    .head-login {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .inner-foot {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .nav-box-foot {
+        flex-direction: column;
     }
 }

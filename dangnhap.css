@@ -26,6 +26,8 @@ section {
     display: flex;
     align-items: center;
     gap: 109px;
+    padding: 70px 0;
+    justify-content: center;
 }
 
 .login-page {
@@ -37,8 +39,7 @@ section {
     gap: 52px;
     background-color: #ffffff;
     border-radius: 32px;
-    max-width: 513px;
-    width: 100%;
+    width: 513px;
 }
 
 .main-text {
@@ -152,4 +153,20 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.img {
+    width: 50%;
+    height: auto;
+}
+
+@media (max-width: 1100px) {
+    .img {
+        display: none;
+    }
+
+    .login-page {
+        max-width: 513px;
+        width: 100%;
+    }
 }
