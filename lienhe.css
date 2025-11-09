@@ -8,7 +8,7 @@
 .container {
     margin: 0 auto;
     width: 90%;
-    max-width: 1440px;
+    max-width: 1299px;
 }
 
 a {
@@ -109,13 +109,14 @@ section {
 .inner-sec {
     display: flex;
     align-items: center;
-    gap: 98px;
+    gap: 20px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin: 0 auto;
 }
 
 .main-text {
@@ -218,5 +219,16 @@ section {
 @media (max-width: 768px) {
     .nav-box-foot {
         flex-direction: column;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+    }
+    .inner-sec .container {
+        display: flex;
+        justify-content: center;
+    }
+    .foot .inner-foot .logo-foot .text {
+        text-align: center;
     }
 }
